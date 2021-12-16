@@ -1,0 +1,15 @@
+[eng] I use these program in UNIX-pipe way.
+[ru] Я использую эти программы в виде UNIX-pipe.
+[eng] Example:
+[ru] Например:
+curl -s "https://api.vk.com/method/messages.getConversationMembers?peer_id=\
+2000000001&fields=first_name&access_token=xxxx&v=5.131" |\
+./vk_chatlistfilter/vk_chatlistfilter | ./vk_chatlistfilter/touserorclub |\
+./notice
+[eng] It'll print kinda:
+[ru] Напечатано будет примерно такое:
+*id0
+*id1
+*club2
+*id3
+*id4
